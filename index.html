@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>zhou-ofer</title>
-    <link rel="stylesheet" href="./assets/flat-ui.min.css">
-    <link rel="stylesheet" href="./assets/waifu.css" />
-    <script src="./assets/jquery.min.js"></script>
+    <!-- 引入看板娘样式文件 -->
+    <link rel="stylesheet" href="./assets/css/flat-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/waifu.css" />
+    <script src="./assets/js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         src="//music.163.com/outchain/player?type=2&id=1331618583&auto=1&height=66"></iframe>
     <!-- 网易云音乐 end -->
 
-    
+
     <!-- 看板娘  start -->
     <div class="waifu">
         <div class="waifu-tips"></div>
@@ -32,9 +33,11 @@
             <span class="fui-cross"></span>
         </div>
     </div>
+    <!-- 引入看板娘js文件(依赖JQuery) -->
+    <script src="assets/js/waifu-tips.js"></script>
+    <script src="assets/js/live2d.js"></script>
 
-    <script src="assets/waifu-tips.js"></script>
-    <script src="assets/live2d.js"></script>
+    <!-- 看板娘 end -->
     <script type="text/javascript">
         /* 可直接修改部分参数 */
         live2d_settings['modelId'] = 4;                  // 默认模型 ID
@@ -52,7 +55,7 @@
         /* 在 initModel 前添加 */
         initModel('./assets/waifu-tips.json')
     </script>
-    <!-- 看板娘 end -->
+    
 </body>
 
 </html>
